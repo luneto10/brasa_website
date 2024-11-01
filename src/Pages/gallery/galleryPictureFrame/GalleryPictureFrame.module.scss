@@ -8,10 +8,6 @@
     overflow: hidden;
     transition: transform 0.2s ease;
     text-align: center;
-
-    &:hover {
-        transform: scale(1.05);
-    }
 }
 
 .image {
