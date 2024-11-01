@@ -1,0 +1,82 @@
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .carouselInner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carouselItem {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carouselImage {
+    width: 100%; /* Garante que a imagem ocupe a largura total do container */
+    height: 400px; /* Define uma altura fixa para padronizar o tamanho */
+    object-fit: cover; /* Corta a imagem para ajustar ao tamanho sem distorção */
+    border-radius: 8px; /* Aplica bordas arredondadas */
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  
+  .dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px; 
+  }
+  
+  .dot {
+    width: 8px;
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .dot:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .activeDot {
+    background-color: #fff; /* Cor da bolinha ativa */
+  }
+  
